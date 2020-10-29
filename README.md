@@ -1,3 +1,7 @@
+
+<h1>install</h1>
+<p>git clone https://github.com/aditiyadwiramadani88/Django_Rest_Crud</p>
+<p>pip install -r requirement.txt</p>
 <h1> Create token </h1>
 <code>
 	http://exsample.com/token
