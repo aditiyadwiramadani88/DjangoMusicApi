@@ -1,8 +1,44 @@
-<h1>Simple Crud Using Django Rest framework</h1>
+<h1> Create token </h1>
 <code>
-	
-	pip install -r requirements.txt
-	python run.py 
-	open in browser: loclahost:7000/list-create-song
-	Token: 77c2c2a5ffdfcffef7e5db61d4650cc0c8c0c167
+	http://exsample.com/token
+method post {
+    "username": "admin",
+    "password": "admin"
+}
+
+<h1>refresh token</h1>
+<code>
+	http://exsample.com/resfresh_token
+	mthod post = {
+	"refresh": ""
+	}
 </code>
+</code>
+
+<h1>auth</h1>
+<code>
+	headers Authorization: Bearer token
+</code>
+<h1>Create Read</h1>
+
+<code>
+	http://exsample.com/
+method = get and post
+post = {
+	title: string,
+	song: file.mp3 
+	artist: string
+}
+
+</code>
+<h1>Edit Delete read </h1>
+<code>
+	http://exsample.com/id
+method = get and put delete 
+put = {
+	title: string,
+	song: file.mp3 
+	artist: string
+}
+</code>
+
