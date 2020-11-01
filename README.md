@@ -9,7 +9,6 @@ method post {
     "username": "admin",
     "password": "admin"
 }
-
 <h1>refresh token</h1>
 <code>
 	http://exsample.com/resfresh_token
