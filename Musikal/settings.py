@@ -41,13 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Music_Library.apps.MusicLibraryConfig',
     'rest_framework',
-     'FrondEnd',
     'rest_framework.authtoken',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -155,10 +156,11 @@ USE_L10N = True
 
 USE_TZ = True
 
+CORS_ALLOWED_ORIGIN_REGEXES = [r"^http.*$"]
+
+
 
 from datetime import timedelta
-
-...
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=2),
