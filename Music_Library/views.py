@@ -2,7 +2,8 @@ from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIV
 from . models import *
 from .serializer import *
 import os
-fro
+
+
 
 # create list method = get and post
 class ListMusic(ListCreateAPIView):
