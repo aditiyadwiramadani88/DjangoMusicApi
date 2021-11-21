@@ -1,38 +1,41 @@
 
-<h1>install</h1>
-<p>git clone https://github.com/aditiyadwiramadani88/Django_Rest_Crud</p>
-<p>pip install -r requirement.txt</p>
-<h1> Create token </h1>
+# installation
+```sh
+git clone https://github.com/aditiyadwiramadani88/Django_Rest_Crud
+pip install -r requirement.txt
 
 ```
-	http://exsample.com/token
+ # Create token 
+
+```
+http://exsample.com/token
 method post {
     "username": "admin",
     "password": "admin"
 }
 
 ```
-<h1>refresh token</h1>
+# refresh token
+
+```
+http://exsample.com/resfresh_token
+mthod post = {
+"refresh": ""
+}
 
 ```  
-	http://exsample.com/resfresh_token
-	mthod post = {
-	"refresh": ""
-	}
-
-```  
 
 
 
-<h1>auth</h1>
+# auth
 
 ```
-	headers Authorization: Bearer token
+headers Authorization: Bearer token
 ```
-<h1>Create Read</h1>
+# Create Read
 
 ```
-	http://exsample.com/
+http://exsample.com/
 method = get and post
 post = {
 	title: string,
@@ -42,11 +45,11 @@ post = {
 
 ```
 
-<h1>Edit Delete read </h1>
+# Edit Delete read 
 
 
 ```
-	http://exsample.com/id
+http://exsample.com/id
 method = get and put delete 
 put = {
 	title: string,
