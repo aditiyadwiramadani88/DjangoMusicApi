@@ -6,55 +6,56 @@ pip install -r requirement.txt
 
 ```
  # Create token 
+ - http://exsample.com/token
+- method post
 
-```
-http://exsample.com/token
-method post {
+```json
+ {
     "username": "admin",
     "password": "admin"
 }
 
 ```
-# refresh token
+# Refresh token
 
-```
-http://exsample.com/resfresh_token
-mthod post = {
-"refresh": ""
+- http://exsample.com/resfresh_token
+- method post 
+
+```json
+ {
+"refresh": "tokens"
 }
 
 ```  
-
-
-
-# auth
+# Auth
 
 ```
 headers Authorization: Bearer token
 ```
 # Create Read
 
-```
-http://exsample.com/
-method = get and post
-post = {
-	title: string,
-	song: file.mp3 
-	artist: string
+
+-http://exsample.com/
+- method = get and post
+
+```json
+	"title": "string",
+	"song": "file.mp3"
+	"artist: string"
 }
 
 ```
 
 # Edit Delete read 
 
+- http://exsample.com/id
+- method = get and put delete 
 
-```
-http://exsample.com/id
-method = get and put delete 
-put = {
-	title: string,
-	song: file.mp3 
-	artist: string
+```json
+ {
+	"title": "string",
+	"song": "file.mp3" 
+	"artist": "string"
 }
 
 ```
