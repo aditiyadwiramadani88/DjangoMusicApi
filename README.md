@@ -39,7 +39,7 @@ headers Authorization: Bearer token
 - method = get and post
 
 ```json
-	"title": "string",
+{ 	"title": "string",
 	"song": "file.mp3"
 	"artist: string"
 }
