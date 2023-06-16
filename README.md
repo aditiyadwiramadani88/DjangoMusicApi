@@ -1,11 +1,13 @@
 
-# installation
+# Django Music Api
+
+## Installation
 ```sh
 git clone https://github.com/aditiyadwiramadani88/Django_Rest_Crud
 pip install -r requirement.txt
 
 ```
- # Create token 
+ ## Create token 
  - http://exsample.com/token
 - method post
 
@@ -16,7 +18,7 @@ pip install -r requirement.txt
 }
 
 ```
-# Refresh token
+## Refresh token
 
 - http://exsample.com/resfresh_token
 - method post 
@@ -27,15 +29,15 @@ pip install -r requirement.txt
 }
 
 ```  
-# Auth
+## Auth
 
 ```
 headers Authorization: Bearer token
 ```
-# Create Read
+## Create Read
 
 
--http://exsample.com/
+- http://exsample.com/
 - method = get and post
 
 ```json
@@ -46,7 +48,7 @@ headers Authorization: Bearer token
 
 ```
 
-# Edit Delete read 
+## Edit Delete read 
 
 - http://exsample.com/id
 - method = get and put delete 
